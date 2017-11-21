@@ -1,0 +1,25 @@
+form {
+  position: relative;
+  margin-top:120px;
+}
+
+table {
+  position: relative;
+  top: 30;
+  left: 20;
+}
+
+label{
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+button{
+  border-radius: 10px;
+  padding: 7px 15px;
+}
+
+input {
+  font-size: 0.7em;
+  padding: 0.8em;
+}
