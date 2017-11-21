@@ -1,3 +1,20 @@
+body{
+  background-image: url("https://manuelsarevalo.neocities.org/NGN/fondo.png");
+  background-size: cover;
+}
+
+#login{
+  width: 400px;
+  height: 400px;
+  background: #6E81D5;
+  opacity: .87;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
 label{
   font-family: sans-serif;
   font-size: 13px;
