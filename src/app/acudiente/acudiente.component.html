@@ -1,11 +1,12 @@
 <link href="acudiente.component.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="acudiente.js"></script>
 <div id="menu" style="min-height: 100vh">
   <ul class="horizontal">
     <li><img
       src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png"
       width="100" id="imagen" title="Nazaret"></li>
-    <li><select>
+    <li style="text-align: center"><select>
       <option>Seleccione</option>
       <option value="hujo 1">Hijo 1</option>
       <option value="hijo n">Hijo n</option>
@@ -22,7 +23,7 @@
 </div>
 
 
-<div id="consultar" style="display: none">
+<div id="consultar" style="display: none" ng-app="miApp" ng-controller="myControl">
   <label>Estudiante:    {{}}</label><br>
   <label>Documento:     {{}}</label><br>
   <label>Curso:         {{}}</label><br><br>
@@ -61,5 +62,42 @@
   </table>
 </div>
 <div id="actualizar" style="display: none">
-  <p>Pruebas 2</p>
+  <p id="texto">A continuacion encontraras tu informacion personal para ser modificada.</p>
+  <form>
+    <table id="datos">
+      <tr>
+        <td>
+          <label>Nombre:</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Apellidos:</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Documento:</label>
+        </td>
+        <td>
+          <label>1020809520</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Fecha de Nacimiento:</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+    </table>
+    <button onclick="alert('Hola!')">Guardar</button>
+  </form>
 </div>

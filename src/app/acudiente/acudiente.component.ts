@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {get} from 'http';
 
 @Component({
   selector: 'app-acudiente',
@@ -12,11 +13,8 @@ export class AcudienteComponent implements OnInit {
   ngOnInit() {
   }
 
-  var myApp = angular.module('myApp',[]);
 
-  myApp.controller('GreetingController', ['$scope', function($scope) {
-    $scope.greeting = 'Prueba!';
-  }]);
 
 }
-}
+
+
