@@ -4,6 +4,7 @@ body{
 
 #menu {
   width: 200px;
+  float: left;
 }
 
 #menu ul {
@@ -42,7 +43,5 @@ body{
 #bienvenida{
   text-align: center;
   margin: auto;
-  position: fixed;
-  visibility: hidden;
 }
 
