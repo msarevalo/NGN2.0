@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DocenteComponent } from './docente/docente.component';
 import { MenuDecenteAcudienteComponent } from './menu-docente-acudiente/menu-docente-acudiente.component';
 import { MenuAdminAcudienteComponent } from './menu-admin-acudiente/menu-admin-acudiente.component';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 const appRoutes:Routes = [
   {
@@ -34,7 +35,8 @@ const appRoutes:Routes = [
     AdminComponent,
     DocenteComponent,
     MenuDecenteAcudienteComponent,
-    MenuAdminAcudienteComponent
+    MenuAdminAcudienteComponent,
+    BienvenidaComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

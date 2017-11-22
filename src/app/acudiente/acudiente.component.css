@@ -2,6 +2,10 @@ body{
   margin: 0;
 }
 
+#menu {
+  width: 200px;
+}
+
 #menu ul {
   list-style-type: none;
   margin: 0px;
@@ -33,5 +37,12 @@ body{
   background: #6E81D5;
   border-left: 10px solid #333;
   color: #fff;
+}
+
+#bienvenida{
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  visibility: hidden;
 }
 
