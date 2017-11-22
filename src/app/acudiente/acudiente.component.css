@@ -3,7 +3,6 @@ body{
 }
 
 #menu {
-  width: 200px;
   float: left;
 }
 
@@ -42,6 +41,5 @@ body{
 
 #bienvenida{
   text-align: center;
-  margin: auto;
 }
 

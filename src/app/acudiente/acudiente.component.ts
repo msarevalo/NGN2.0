@@ -11,5 +11,4 @@ export class AcudienteComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
