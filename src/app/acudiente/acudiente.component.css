@@ -43,3 +43,63 @@ body{
   text-align: center;
 }
 
+#imagen{
+  padding: 10px 10px 10px 50px;
+}
+
+#imagen1{
+  padding: 10px 10px 10px 50px;
+}
+
+#notas{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  background: #fff;
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#notas tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#notas thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 20px;
+}
+
+#notas tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#notas td {
+  border-bottom: 1px solid #ccc;
+  color: #669;
+  padding: 7px 25px;
+}
+
+#consultar{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+

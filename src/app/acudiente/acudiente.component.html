@@ -1,25 +1,65 @@
 <link href="acudiente.component.css" type="text/css" rel="stylesheet">
+<script src="acudiente.js"></script>
 <div id="menu" style="min-height: 100vh">
   <ul class="horizontal">
-    <li><a href="#?"><img
+    <li><img
       src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png"
-      width="100"></a></li>
+      width="100" id="imagen" title="Nazaret"></li>
     <li><select>
       <option>Seleccione</option>
       <option value="hujo 1">Hijo 1</option>
       <option value="hijo n">Hijo n</option>
     </select></li>
-    <li><a href="#">Consultar notas notas</a></li>
-    <li><a href="?">Actualizar mis datos</a></li>
+    <li><a onclick="Consultar()">Consultar notas notas</a></li>
+    <li><a onclick="Actualizar()">Actualizar mis datos</a></li>
     <li><a href="?#"><img
       src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png"
-      width="40"></a></li>
+      width="40" id="imagen1" title="Cerrar Sesion"></a></li>
   </ul>
 </div>
 <div id="bienvenida">
   <img src="https://manuelsarevalo.neocities.org/NGN/bienvenido.png" width="500">
 </div>
-prueba <input type="checkbox" ngModel="checked">
-<div ng-hide="prueba" class="ng-hide">
-  <p>esto es una prueba</p>
+
+
+<div id="consultar" style="display: none">
+  <label>Estudiante:    {{}}</label><br>
+  <label>Documento:     {{}}</label><br>
+  <label>Curso:         {{}}</label><br><br>
+  <table id="notas" align="center">
+    <thead>
+      <tr>
+        <th>Codigo Materia</th>
+        <th>Nombre Asignatura</th>
+        <th>Primer Periodo</th>
+        <th>Segundo Periodo</th>
+        <th>Tercer Periodo</th>
+        <th>Cuarto Periodo</th>
+        <th>Definitiva</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+      </tr>
+      <tr>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+        <td>prueba</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="actualizar" style="display: none">
+  <p>Pruebas 2</p>
 </div>
