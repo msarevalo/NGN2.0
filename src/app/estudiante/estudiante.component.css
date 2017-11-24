@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #cccccc;
 }
 
 #menu{
@@ -27,6 +28,7 @@ body{
   text-transform: uppercase;
   display: block;
   padding: 10px 10px 10px 20px;
+  cursor: pointer;
 }
 
 #menu ul li a:hover {
@@ -154,10 +156,6 @@ button:hover:before {
   border: none;
   background-color: #3a7999;
   color: #f2f2f2;
-}
-
-body{
-  background-color: #cccccc;
 }
 
 #actualizar select{

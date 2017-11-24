@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #cccccc;
 }
 
 #menu{
@@ -27,6 +28,7 @@ body{
   text-transform: uppercase;
   display: block;
   padding: 10px 10px 10px 20px;
+  cursor: pointer;
 }
 
 #menu ul li a:hover {

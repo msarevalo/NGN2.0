@@ -1,18 +1,117 @@
 <link href="docente.component.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="docente.js"></script>
 <div id="menu" style="min-height: 100vh">
   <ul class="horizontal">
     <li><a href="#?"><img
-      src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png"
+      src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png" id="imagen"
       width="100"></a></li>
-    <li><a href="#">Agregar notas</a></li>
-    <li><a href="?">Ver mis cursos</a></li>
-    <li><a href="?">Ver por estudiante</a></li>
-    <li><a href="?">Actualizar mis datos</a></li>
+    <li><a onclick="CargarNotas()">Agregar notas</a></li>
+    <li><a onclick="VerCursos()">Ver mis cursos</a></li>
+    <li><a onclick="VerEstudiante()">Ver por estudiante</a></li>
+    <li><a onclick="ActualizarDocente()">Actualizar mis datos</a></li>
     <li><a href="?#"><img
-      src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png"
+      src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png" id="imagen1"
       width="40"></a></li>
   </ul>
 </div>
+
 <div id="bienvenida">
   <img src="https://manuelsarevalo.neocities.org/NGN/bienvenido.png" width="500">
+</div>
+
+<div id="actualizar" style="display: none">
+  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p><br><br>
+  <form>
+    <table id="datos">
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email" required>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" id="enviar" value="Actualizar"></button></center>
+  </form>
+</div>
+
+<div id="VerEstudiante" style="display: none">
+  <label>prueba</label>
+</div>
+
+<div id="VerCursos" style="display: none">
+  <label>Prueba Curso</label>
+</div>
+
+<div id="CargarNotas" style="display: none">
+  <label>Notas!</label>
 </div>
