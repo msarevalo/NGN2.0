@@ -105,7 +105,38 @@
 </div>
 
 <div id="VerEstudiante" style="display: none">
-  <label>prueba</label>
+  <table>
+    <tr>
+      <td>
+        <label>Curso</label>
+      </td>
+      <td>
+        <select>
+          <option>Seleccione</option>
+          <option value="curso">Cursos</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Doc. Estudiante</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <button type="submit" onclick="ResultadoEstudiante()">Consultar</button>
+</div>
+
+<div id="resultadoEstudiante" style="display: none">
+  <table>
+    <tr>
+      <td>
+        <label>prueba</label>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div id="VerCursos" style="display: none">

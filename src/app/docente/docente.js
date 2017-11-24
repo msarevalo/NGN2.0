@@ -4,6 +4,7 @@ function ActualizarDocente() {
   document.getElementById("VerEstudiante").style.display="none";
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="none";
+  document.getElementById("resultadoEstudiante").style.display="none";
 }
 
 function VerEstudiante() {
@@ -12,6 +13,7 @@ function VerEstudiante() {
   document.getElementById("VerEstudiante").style.display="block";
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="none";
+  document.getElementById("resultadoEstudiante").style.display="none";
 }
 
 function VerCursos() {
@@ -20,6 +22,7 @@ function VerCursos() {
   document.getElementById("VerEstudiante").style.display="none";
   document.getElementById("VerCursos").style.display="block";
   document.getElementById("CargarNotas").style.display="none";
+  document.getElementById("resultadoEstudiante").style.display="none";
 }
 
 function CargarNotas() {
@@ -28,4 +31,28 @@ function CargarNotas() {
   document.getElementById("VerEstudiante").style.display="none";
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="block";
+  document.getElementById("resultadoEstudiante").style.display="none";
+}
+
+function ResultadoEstudiante() {
+  document.getElementById("bienvenida").style.display="none";
+  document.getElementById("actualizar").style.display="none";
+  document.getElementById("VerEstudiante").style.display="block";
+  document.getElementById("VerCursos").style.display="none";
+  document.getElementById("CargarNotas").style.display="none";
+  document.getElementById("resultadoEstudiante").style.display="block";
+}
+
+function validate(form) {
+
+  // validation code here ...
+
+
+  if(!valid) {
+    alert('Please correct the errors in the form!');
+    return false;
+  }
+  else {
+    return confirm('Do you really want to submit the form?');
+  }
 }

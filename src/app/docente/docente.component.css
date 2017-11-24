@@ -40,3 +40,60 @@ body{
 #bienvenida {
   text-align: center;
 }
+
+#actualizar{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+
+}
+
+input {
+  font-size: 0.9em;
+  padding: 0.4em;
+  border-radius: 9px;
+  border: 1px solid;
+}
+
+#datos td{
+  padding: 18px 25px;
+}
+
+button {
+  border: none;
+  background: #3a7999;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 10ms ease;
+}
+
+button:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 52px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+button:hover:before {
+  width: 100%;
+}
+
+#enviar{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}
+
+label{
+  font-family: sans-serif;
+  font-size: 16px;
+}
