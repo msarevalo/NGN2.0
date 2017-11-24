@@ -38,3 +38,129 @@ body{
 #bienvenida{
   text-align: center;
 }
+
+#imagen{
+  padding: 10px 10px 10px 20px;
+}
+
+#imagen1{
+  padding: 10px 10px 10px 45px;
+}
+
+#notas{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#notas tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#notas thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 48px;
+}
+
+#notas tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#notas td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 50px;
+}
+
+#consultar{
+  position: absolute;
+  top: 15%;
+  left: 16%;
+}
+
+input {
+  font-size: 0.9em;
+  padding: 0.4em;
+  border-radius: 9px;
+  border: 1px solid;
+}
+
+#datos td{
+  padding: 18px 25px;
+}
+
+#texto{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  background: #3a7999;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 10ms ease;
+}
+
+button:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 52px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+button:hover:before {
+  width: 100%;
+}
+
+#actualizar{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+
+}
+
+#enviar{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}
+
+body{
+  background-color: #cccccc;
+}
+
+#actualizar select{
+  padding: 0px 0px 10px 0px;
+}
+
