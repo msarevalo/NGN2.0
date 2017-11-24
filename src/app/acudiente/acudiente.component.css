@@ -152,3 +152,10 @@ button:before {
 button:hover:before {
   width: 100%;
 }
+
+#actualizar{
+  position: absolute;
+  top: 13%;
+  left: 30%;
+
+}
