@@ -12,7 +12,7 @@ body{
   margin: 0px;
   padding: 0px;
   width: 200px;
-  font-family: Arial, sans-serif;
+  font-family: Blackletter, sans-serif;
   font-size: 11pt;
   background: #404c81;
   height: 100%;
@@ -43,9 +43,19 @@ body{
 
 #actualizar{
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 25%;
+}
 
+#actualizar header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: ;
 }
 
 input {

@@ -6,10 +6,10 @@
     <li><a href="#?"><img
       src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png" id="imagen"
       width="100"></a></li>
-    <li><a onclick="CargarNotas()">Agregar notas</a></li>
+   <em><li><a onclick="CargarNotas()">Agregar notas</a></li>
     <li><a onclick="VerCursos()">Ver mis cursos</a></li>
     <li><a onclick="VerEstudiante()">Ver por estudiante</a></li>
-    <li><a onclick="ActualizarDocente()">Actualizar mis datos</a></li>
+    <li><a onclick="ActualizarDocente()">Actualizar mis datos</a></li></em>
     <li><a href="?#"><img
       src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png" id="imagen1"
       width="40"></a></li>
@@ -21,7 +21,8 @@
 </div>
 
 <div id="actualizar" style="display: none">
-  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p><br><br>
+  <header>Actualizar Mis Datos</header>
+  <br><p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p><br>
   <form>
     <table id="datos">
       <tr>
@@ -126,7 +127,7 @@
       </td>
     </tr>
   </table>
-  <button type="submit" onclick="ResultadoEstudiante()">Consultar</button>
+  <button><input type="submit" onclick="ResultadoEstudiante()" value="Consultar"></button>
 </div>
 
 <div id="resultadoEstudiante" style="display: none">
