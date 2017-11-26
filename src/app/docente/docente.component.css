@@ -136,3 +136,278 @@ label{
 #imagen1{
   padding: 10px 10px 10px 50px;
 }
+
+#VerEstudiante{
+  position: absolute;
+  top: 3%;
+  left: 16%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 250px;
+}
+
+#VerEstudiante header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#VerEstudiante table{
+  padding: 18px 25px;
+}
+
+#VerEstudiante table td{
+  padding: 10px 25px;
+}
+
+#VerEstudiante select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#VerEstudiante input[type=submit]{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}
+
+#resultadoEstudiante{
+  position: absolute;
+  top: 42%;
+  left: 16%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: auto;
+  height: 280px;
+}
+
+#resultadoEstudiante header {
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#resultadoEstudiante a{
+  padding: 40px;
+  color: #003399;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+
+#resultadoEstudiante label{
+  padding: 15px 40px;
+}
+
+#notas{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#notas tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#notas thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 48px;
+}
+
+#notas tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#notas tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#notas td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 50px;
+}
+
+#VerCursos{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#VerCursos header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#cursos{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#cursos tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#cursos thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#cursos th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 48px;
+}
+
+#cursos tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#cursos tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#cursos td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 50px;
+}
+
+#Cargar{
+  position: absolute;
+  top: 42%;
+  left: 16%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: auto;
+  height: 280px;
+}
+
+#Cargar header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#Cargar a{
+  cursor: pointer;
+  padding: 50px;
+  color: #003399;
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+#Cargar input[type=number]{
+  font-size: 0.9em;
+  padding: 0.4em;
+  border-radius: 9px;
+  border: 1px solid;
+  width: 60px;
+  height: 20px;
+}
+
+#tableCargar{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#tableCargar tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#tableCargar thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#tableCargar th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 48px;
+}
+
+#tableCargar tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#tableCargar tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#tableCargar td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 50px;
+}

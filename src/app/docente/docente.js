@@ -5,6 +5,7 @@ function ActualizarDocente() {
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="none";
   document.getElementById("resultadoEstudiante").style.display="none";
+  document.getElementById("Cargar").style.display="none";
 }
 
 function VerEstudiante() {
@@ -14,6 +15,7 @@ function VerEstudiante() {
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="none";
   document.getElementById("resultadoEstudiante").style.display="none";
+  document.getElementById("Cargar").style.display="none";
 }
 
 function VerCursos() {
@@ -23,6 +25,7 @@ function VerCursos() {
   document.getElementById("VerCursos").style.display="block";
   document.getElementById("CargarNotas").style.display="none";
   document.getElementById("resultadoEstudiante").style.display="none";
+  document.getElementById("Cargar").style.display="none";
 }
 
 function CargarNotas() {
@@ -32,6 +35,7 @@ function CargarNotas() {
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="block";
   document.getElementById("resultadoEstudiante").style.display="none";
+  document.getElementById("Cargar").style.display="none";
 }
 
 function ResultadoEstudiante() {
@@ -41,6 +45,17 @@ function ResultadoEstudiante() {
   document.getElementById("VerCursos").style.display="none";
   document.getElementById("CargarNotas").style.display="none";
   document.getElementById("resultadoEstudiante").style.display="block";
+  document.getElementById("Cargar").style.display="none";
+}
+
+function  Cargar() {
+  document.getElementById("bienvenida").style.display="none";
+  document.getElementById("actualizar").style.display="none";
+  document.getElementById("VerEstudiante").style.display="none";
+  document.getElementById("VerCursos").style.display="none";
+  document.getElementById("CargarNotas").style.display="block";
+  document.getElementById("resultadoEstudiante").style.display="none";
+  document.getElementById("Cargar").style.display="block";
 }
 
 function validate(form) {

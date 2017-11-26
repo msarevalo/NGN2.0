@@ -106,6 +106,7 @@
 </div>
 
 <div id="VerEstudiante" style="display: none">
+  <header>Ver Por Estudiante</header>
   <table>
     <tr>
       <td>
@@ -127,23 +128,115 @@
       </td>
     </tr>
   </table>
-  <button><input type="submit" onclick="ResultadoEstudiante()" value="Consultar"></button>
+  <center><button onclick="ResultadoEstudiante()"><input type="submit" onclick="ResultadoEstudiante()" value="Consultar">
+  </button></center>
 </div>
 
 <div id="resultadoEstudiante" style="display: none">
-  <table>
+  <header>Resultado Busqueda</header>
+  <label>Estudiante:    {{}}</label><br>
+  <label>Documento:     {{}}</label><br>
+  <label>Curso:         {{}}</label><br><br>
+  <table id="notas" align="center">
+    <thead>
     <tr>
-      <td>
-        <label>prueba</label>
-      </td>
+      <th>Codigo Materia</th>
+      <th>Nombre Asignatura</th>
+      <th>Primer Periodo</th>
+      <th>Segundo Periodo</th>
+      <th>Tercer Periodo</th>
+      <th>Cuarto Periodo</th>
+      <th>Definitiva</th>
     </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+    </tr>
+    </tbody>
   </table>
+  <a onclick="VerEstudiante()" style="cursor: pointer">Borrar Busqueda</a>
 </div>
 
 <div id="VerCursos" style="display: none">
-  <label>Prueba Curso</label>
+  <header>Mis Cursos</header>
+  <table id="cursos">
+    <thead>
+    <tr>
+      <th>Codigo Curso</th>
+      <th>Nombre Curso</th>
+      <th>Codigo Materia</th>
+      <th>Nombre Materia</th>
+      <th>Cant. Estudiantes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>prueba</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 
 <div id="CargarNotas" style="display: none">
-  <label>Notas!</label>
+  <header>Cargar Notas</header>
+  <table>
+    <tr>
+      <td>
+        <label>Curso</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option id="curso">Cursos</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Materias</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option id="materia">Materias</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <center><button onclick="Cargar()"><input type="submit" onclick="Cargar()" value="Cargar Notas">
+</div>
+
+<div id="Cargar" style="display: none">
+  <header>Notas</header><br>
+  <table id="tableCargar">
+    <thead>
+    <tr>
+      <th>Codigo Alumno</th>
+      <th>Nombre Alumno</th>
+      <th>Nota</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>prueba</td>
+      <td>prueba</td>
+      <td>
+        <input type="number" value="Nota" required>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <button><input type="submit" value="Enviar"></button><br>
+  <a onclick="CargarNotas()">Cargar Otro Curso</a>
 </div>
