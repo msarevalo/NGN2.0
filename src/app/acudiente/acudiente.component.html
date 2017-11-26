@@ -7,12 +7,12 @@
       src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png"
       width="100" id="imagen" title="Nazaret"></li>
     <li style="text-align: center"><select>
-      <option>Seleccione</option>
-      <option value="hujo 1">Hijo 1</option>
+      <option></option>
+      <option value="hujo 1">Manuel Santiago Arevalo Corredor</option>
       <option value="hijo n">Hijo n</option>
-    </select></li>
-    <li><a onclick="Consultar()">Consultar notas notas</a></li>
-    <li><a onclick="Actualizar()">Actualizar mis datos</a></li>
+    </select></li><br>
+    <em><li><a onclick="Consultar()">Consultar notas</a></li>
+    <li><a onclick="Actualizar()">Actualizar mis datos</a></li></em>
     <li><a href="?#"><img
       src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png"
       width="40" id="imagen1" title="Cerrar Sesion"></a></li>
@@ -64,7 +64,8 @@
 </div>
 
 <div id="actualizar" style="display: none">
-  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p><br><br>
+  <header>Actualizar Mis Datos</header>
+  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p>
   <form>
     <table id="datos">
       <tr>
@@ -124,7 +125,7 @@
           <label>Telefono contacto</label>
         </td>
         <td>
-          <input type="number" required>
+          <input type="tel" required>
         </td>
         <td>
           <label>Direccion de Recidencia</label>
