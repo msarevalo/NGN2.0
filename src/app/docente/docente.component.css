@@ -411,3 +411,9 @@ label{
   color: #404c81;
   padding: 7px 50px;
 }
+
+#enviarNotas{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}

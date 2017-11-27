@@ -162,3 +162,14 @@ button:hover:before {
   padding: 0px 0px 10px 0px;
 }
 
+#actualizar select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+input[type=date]{
+  width: 100%;
+}
