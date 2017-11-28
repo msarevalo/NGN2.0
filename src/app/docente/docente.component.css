@@ -328,12 +328,12 @@ label{
 
 #Cargar{
   position: absolute;
-  top: 42%;
-  left: 16%;
+  top: 3%;
+  left: 32%;
   background-color: #dddddd;
   border-radius: 25px;
   width: auto;
-  height: 280px;
+  height: auto;
 }
 
 #Cargar header{
@@ -391,7 +391,7 @@ label{
   font-weight: normal;
   color: #039;
   border-bottom: 2px solid #6678b1;
-  padding: 10px 48px;
+  padding: 10px 78px;
 }
 
 #tableCargar tbody{
@@ -409,10 +409,51 @@ label{
 #tableCargar td {
   border-bottom: 1px solid grey;
   color: #404c81;
-  padding: 7px 50px;
+  padding: 7px 80px;
 }
 
 #enviarNotas{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}
+
+#CargarNotas{
+  position: absolute;
+  top: 3%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 230px;
+}
+
+#CargarNotas header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#CargarNotas table{
+  padding: 20px 200px;
+}
+
+#CargarNotas table td{
+  padding: 7px 20px;
+}
+
+#CargarNotas select{
+  padding: 0px 0px 7px 0px;
+  width: 100px;
+}
+
+#CargarNotas input[type=submit]{
   border: none;
   background-color: #3a7999;
   color: #f2f2f2;

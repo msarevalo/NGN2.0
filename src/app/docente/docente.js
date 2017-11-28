@@ -53,7 +53,7 @@ function  Cargar() {
   document.getElementById("actualizar").style.display="none";
   document.getElementById("VerEstudiante").style.display="none";
   document.getElementById("VerCursos").style.display="none";
-  document.getElementById("CargarNotas").style.display="block";
+  document.getElementById("CargarNotas").style.display="none";
   document.getElementById("resultadoEstudiante").style.display="none";
   document.getElementById("Cargar").style.display="block";
 }
