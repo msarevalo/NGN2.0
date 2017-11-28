@@ -25,16 +25,14 @@
     <li><a>Docentes</a>
     <ul>
       <li><a onclick="CrearDocente()">Crear docente</a></li>
-      <li><a href="?">Actualizar docente</a></li>
-      <li><a href="?">Consultar docente</a></li>
-      <li><a href="?">Eliminar docente</a></li>
+      <li><a onclick="ActualizarDocente()">Actualizar docente</a></li>
+      <li><a onclick="EliminarDocente()">Eliminar docente</a></li>
     </ul>
     </li>
     <li><a href="?">Estudiantes</a>
     <ul>
       <li><a href="?">Crear estudiante</a></li>
       <li><a href="?">Actualizar estudiante</a></li>
-      <li><a href="?">Consultar estudiante</a></li>
       <li><a href="?">Eliminar estudiantes</a></li>
     </ul>
     </li>
@@ -42,7 +40,6 @@
     <ul>
       <li><a href="?">Crear Acudiente</a></li>
       <li><a href="?">Actualizar Acudiente</a></li>
-      <li><a href="?">Consultar Acudiente</a></li>
       <li><a href="?">Eliminar Acudiente</a></li>
     </ul>
     </li>
@@ -261,6 +258,20 @@
       </tr>
       <tr>
         <td>
+          <label>Usuario</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Contrasena</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <label>Tipo de Documento</label>
         </td>
         <td>
@@ -316,11 +327,127 @@
           <label>Correo Electronico</label>
         </td>
         <td>
-          <input type="email" required>
+          <input type="email">
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" id="enviar" value="Guardar"></button></center>
+  </form>
+</div>
+
+<div id="ActualizarDocente" style="display: none">
+  <header>Actualizar Docente</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Docente</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button onclick="ActDoc()"><input type="submit" onclick="ActDoc()" value="Buscar">
+  </button></center>
+</div>
+
+<div id="ActDoc" style="display: none">
+  <header>Actualizar Docente</header>
+  <form>
+    <table id="datos">
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email">
         </td>
       </tr>
     </table>
     <br><br>
     <center><button><input type="submit" id="enviar" value="Actualizar"></button></center>
   </form>
+</div>
+
+<div id="EliminarDocente" style="display: none">
+  <header>Eliminar Docente</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Docente</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button onclick="ActDoc()"><input type="submit" onclick="ActDoc()" value="Eliminar">
+  </button></center>
 </div>

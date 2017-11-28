@@ -65,7 +65,7 @@ body{
 }
 
 #menu ul li:hover ul{
-  max-height: 200px;
+  max-height: 150px;
   transition: .6s all ease-in;
 }
 
@@ -452,4 +452,151 @@ input[type=submit]{
   text-align: center;
   line-height: 40px;
   border-radius: 25px 25px 0px 0px;
+}
+
+#CrearDocente{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#CrearDocente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#CrearDocente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#CrearDocente table td{
+  padding: 18px 25px;
+}
+
+#ActualizarDocente{
+  position: absolute;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#ActualizarDocente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#ActualizarDocente table{
+  padding: 18px 25px;
+}
+
+#ActualizarDocente table td{
+  padding: 10px 25px;
+}
+
+#ActualizarDocente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActDoc{
+  position: absolute;
+  top: 31.5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#ActDoc header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#ActDoc select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActDoc table td{
+  padding: 18px 25px;
+}
+
+#EliminarDocente{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#EliminarDocente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#EliminarDocente table{
+  padding: 18px 25px;
+}
+
+#EliminarDocente table td{
+  padding: 10px 25px;
+}
+
+#EliminarDocente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
 }
