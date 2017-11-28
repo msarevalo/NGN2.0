@@ -20,6 +20,7 @@
 
 
 <div id="consultar" style="display: none" ng-app="miApp" ng-controller="myControl">
+  <header>Consultar Mis Notas</header>
   <label>Estudiante:    {{}}</label><br>
   <label>Documento:     {{}}</label><br>
   <label>Curso:         {{}}</label><br><br>
@@ -57,8 +58,10 @@
     </tbody>
   </table>
 </div>
+
 <div id="actualizar" style="display: none">
-  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p><br><br>
+  <header>Actualizar Mis Datos</header>
+  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p>
   <form>
     <table id="datos">
       <tr>
