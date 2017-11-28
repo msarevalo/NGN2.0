@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #cccccc;
 }
 
 #menu{
@@ -30,6 +31,7 @@ body{
   padding: 10px 10px 10px 20px;
   display: block;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 #menu ul li a:hover {
@@ -55,6 +57,7 @@ body{
   border-bottom: 1px solid #ccc;
   text-transform: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 #menu ul li li:last-child a{
@@ -71,6 +74,382 @@ body{
   color: #fff;
 }
 
+#imagen{
+  padding: 10px 10px 10px 20px;
+}
+
+#imagen1{
+  padding: 10px 10px 10px 50px;
+}
+
+label{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background: #3a7999;
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 10ms ease;
+}
+
+button:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 52px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+button:hover:before {
+  width: 100%;
+}
+
+input {
+  font-size: 0.9em;
+  padding: 0.4em;
+  border-radius: 9px;
+  border: 1px solid;
+}
+
+input[type=submit]{
+  border: none;
+  background-color: #3a7999;
+  color: #f2f2f2;
+}
+
 #bienvenida{
   text-align: center;
+}
+
+#CrearCurso{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#CrearCurso header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#CrearCurso table{
+  padding: 40px 145px;
+}
+
+#CrearCurso table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#ActualizarCurso{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#ActualizarCurso header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#ActualizarCurso table{
+  padding: 15px 145px;
+}
+
+#ActualizarCurso table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#EliminarCurso{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#EliminarCurso header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#EliminarCurso table{
+  padding: 40px 190px;
+}
+
+#EliminarCurso table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#listadoCurso{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#listadoCurso tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#listadoCurso thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#listadoCurso th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 78px;
+}
+
+#listadoCurso tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#listadoCurso tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#listadoCurso td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 80px;
+}
+
+#ConsultarCursos{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: auto;
+  height: 250px;
+}
+
+#ConsultarCursos header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#CrearMateria{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#CrearMateria header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#CrearMateria table{
+  padding: 40px 145px;
+}
+
+#CrearMateria table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#ActualizarMateria{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#ActualizarMateria header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#ActualizarMateria table{
+  padding: 15px 145px;
+}
+
+#ActualizarMateria table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#EliminarMateria{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 650px;
+  height: 250px;
+}
+
+#EliminarMateria header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#EliminarMateria table{
+  padding: 40px 190px;
+}
+
+#EliminarMateria table td{
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+#listadoMaterias{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 12px;
+  /*background: #fff;*/
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px;
+}
+
+#listadoMaterias tr{
+  border-bottom: 1px solid #ddd;
+}
+
+#listadoMaterias thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#listadoMaterias th{
+  font-size: 14px;
+  font-weight: normal;
+  color: #039;
+  border-bottom: 2px solid #6678b1;
+  padding: 10px 78px;
+}
+
+#listadoMaterias tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#listadoMaterias tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+#listadoMaterias td {
+  border-bottom: 1px solid grey;
+  color: #404c81;
+  padding: 7px 80px;
+}
+
+#ConsultarMateria{
+  position: absolute;
+  top: 20%;
+  left: 32%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: auto;
+  height: 250px;
+}
+
+#ConsultarMateria header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
 }
