@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {Router, ActivatedRoute} from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -7,20 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  model: any = {};
+  loading = false;
+  returnURL: string;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  loginUser(e){
-    e.preventDefault();
-    console.log(e);
-    var username = e.target[0].value;
-    var password = e.target[1].value;
-
-    if(username == "admin" && password == "12345"){
-
-    }
-
-  }
 }

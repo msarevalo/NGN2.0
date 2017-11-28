@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -13,17 +14,12 @@ import { DocenteComponent } from './docente/docente.component';
 import { MenuDecenteAcudienteComponent } from './menu-docente-acudiente/menu-docente-acudiente.component';
 import { MenuAdminAcudienteComponent } from './menu-admin-acudiente/menu-admin-acudiente.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import {LoginGuard} from './login.guard';
 
-const appRoutes:Routes = [
-  {
-    path: '',
-    component: LoginComponent
-  },
-  {
-    path: 'admin',
-    component: AdminComponent
-  }
-  ]
+const routes: Routes = [
+  {path: 'login', component: LoginComponent},
+  {path: 'admin.component.html', component: AdminComponent, canActivate: [LoginGuard]}
+]
 
 @NgModule({
   declarations: [
@@ -39,10 +35,10 @@ const appRoutes:Routes = [
     BienvenidaComponent
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
-    BrowserModule
+    FormsModule,
+    BrowserModule,
   ],
-  providers: [],
+  providers: [LoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

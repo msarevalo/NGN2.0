@@ -1,5 +1,6 @@
 <link href="login.component.css" type="text/css" rel="stylesheet">
-<form align="center" (submit)="loginUser($event)">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<form align="center" #loginForm="ngForm" name="form" (ngSubmit)="loginForm.form.valid && login()" novalidate>
   <br/><br/><br/><br/><br/>
   <div id="login">
   <a href="http://colegionazaret.edu.co/" target="_blank"><img src="https://manuelsarevalo.neocities.org/NGN/logonazaret.png" width="130"></a>
@@ -10,7 +11,7 @@
         <label>User:</label>
       </th>
       <th>
-        <input type="text" placeholder="Ingresa tu usuario">
+        <input type="text" name="user" placeholder="Ingresa tu usuario" required ngModel>
       </th>
     </tr>
     <tr></tr>
@@ -19,12 +20,11 @@
         <label>Password:</label>
       </th>
       <th>
-        <input type="password" placeholder="Ingresa tu contrasena">
+        <input type="password" name="pass" placeholder="Ingresa tu contrasena" required ngModel>
       </th>
     </tr>
   </table>
-  <br/>
   <a href="../remember-psw/remember-psw.component.html">No puedo ingresar...</a><br><br>
-  <button>Ingresar</button>
+    <button type="submit">Enviar</button>
+  </div>
 </form>
-</div>
