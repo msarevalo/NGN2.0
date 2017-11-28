@@ -1,4 +1,5 @@
 <link href="admin.component.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="admin.js"></script>
 <div id="menu" style="min-height: 100vh">
@@ -24,28 +25,28 @@
     </li>
     <li><a>Docentes</a>
     <ul>
-      <li><a onclick="CrearDocente()">Crear docente</a></li>
-      <li><a onclick="ActualizarDocente()">Actualizar docente</a></li>
-      <li><a onclick="EliminarDocente()">Eliminar docente</a></li>
+      <li><a onclick="CrearDocente()">Crear Docente</a></li>
+      <li><a onclick="ActualizarDocente()">Actualizar Docente</a></li>
+      <li><a onclick="EliminarDocente()">Eliminar Docente</a></li>
     </ul>
     </li>
-    <li><a href="?">Estudiantes</a>
+    <li><a>Estudiantes</a>
     <ul>
-      <li><a href="?">Crear estudiante</a></li>
-      <li><a href="?">Actualizar estudiante</a></li>
-      <li><a href="?">Eliminar estudiantes</a></li>
+      <li><a onclick="CrearEstudiante()">Crear Estudiante</a></li>
+      <li><a onclick="ActualizarEstudiante()">Actualizar Estudiante</a></li>
+      <li><a onclick="EliminarEstudiante()">Eliminar Estudiantes</a></li>
     </ul>
     </li>
-    <li><a href="#">Acudientes</a>
+    <li><a>Acudientes</a>
     <ul>
-      <li><a href="?">Crear Acudiente</a></li>
-      <li><a href="?">Actualizar Acudiente</a></li>
-      <li><a href="?">Eliminar Acudiente</a></li>
+      <li><a onclick="CrearAcudiente()">Crear Acudiente</a></li>
+      <li><a onclick="ActualizarAcudiente()">Actualizar Acudiente</a></li>
+      <li><a onclick="EliminarAcudiente()">Eliminar Acudiente</a></li>
     </ul>
     </li>
-    <li><a href="?">Asignar Materias - Salon</a></li>
-    <li><a href="?">Asignar Docente - Materia</a></li>
-    <li><a href="?">Actualizar Mis Datos</a></li>
+    <li><a onclick="MatSal()">Asignar Materias - Curso</a></li>
+    <li><a onclick="DocSal()">Asignar Docente - Materia</a></li>
+    <li><a onclick="Actualizar()">Actualizar Mis Datos</a></li>
     <li><a href="?#"><img
       src="https://manuelsarevalo.neocities.org/NGN/switch-turn-off-icon.png"
       width="40" id="imagen1"></a></li>
@@ -332,7 +333,7 @@
       </tr>
     </table>
     <br><br>
-    <center><button><input type="submit" id="enviar" value="Guardar"></button></center>
+    <center><button><input type="submit" value="Guardar"></button></center>
   </form>
 </div>
 
@@ -355,7 +356,7 @@
 <div id="ActDoc" style="display: none">
   <header>Actualizar Docente</header>
   <form>
-    <table id="datos">
+    <table>
       <tr>
         <td>
           <label>Nombre</label>
@@ -432,7 +433,7 @@
       </tr>
     </table>
     <br><br>
-    <center><button><input type="submit" id="enviar" value="Actualizar"></button></center>
+    <center><button><input type="submit" value="Actualizar"></button></center>
   </form>
 </div>
 
@@ -450,4 +451,603 @@
   </table>
   <center><button onclick="ActDoc()"><input type="submit" onclick="ActDoc()" value="Eliminar">
   </button></center>
+</div>
+
+<div id="CrearEstudiante" style="display: none">
+  <header>Crear Estudiante</header>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Usuario</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Contrasena</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email">
+        </td>
+        <td>
+          <label>Salones</label>
+        </td>
+        <td>
+          <select>
+            <option></option>
+            <option>Salones</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" value="Guardar"></button></center>
+  </form>
+</div>
+
+<div id="ActualizarEstudiante" style="display: none">
+  <header>Actualizar Estudiante</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Estudiante</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button onclick="ActEst()"><input type="submit" onclick="ActEst()" value="Buscar">
+  </button></center>
+</div>
+
+<div id="ActEst" style="display: none">
+  <header>Actualizar Estudiante</header>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email">
+        </td>
+        <td>
+          <label>Salones</label>
+        </td>
+        <td>
+          <select>
+            <option></option>
+            <option>Salones</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" value="Actualizar"></button></center>
+  </form>
+</div>
+
+<div id="EliminarEstudiante" style="display: none">
+  <header>Eliminar Estudiante</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Estudiante</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button><input type="submit" value="Eliminar">
+  </button></center>
+</div>
+
+<div id="CrearAcudiente" style="display: none">
+  <header>Crear Acudiente</header>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Usuario</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Contrasena</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email">
+        </td>
+        <td>
+          <label>Num. Estudiante</label>
+        </td>
+        <td>
+          <input type="number" required id="numEst">
+        </td>
+      </tr>
+    </table>
+    <center><table>
+      <tr class="pintar">
+
+      </tr>
+    </table></center>
+    <br><br>
+    <center><button><input type="submit" value="Guardar"></button></center>
+  </form>
+</div>
+
+<div id="ActualizarAcudiente" style="display: none">
+  <header>Actualizar Acudiente</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Acudiente</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button onclick="ActAcu()"><input type="submit" onclick="ActAcu()" value="Buscar">
+  </button></center>
+</div>
+
+<div id="ActAcu" style="display: none">
+  <header>Actualizar Acudiente</header>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email">
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" value="Actualizar"></button></center>
+  </form>
+</div>
+
+<div id="EliminarAcudiente" style="display: none">
+  <header>Eliminar Acudiente</header>
+  <table>
+    <tr>
+      <td>
+        <label>Doc. Acudiente</label>
+      </td>
+      <td>
+        <input type="number" value="documento" required>
+      </td>
+    </tr>
+  </table>
+  <center><button><input type="submit" value="Eliminar">
+  </button></center>
+</div>
+
+<div id="Actualizar" style="display: none">
+  <header>Actualizar Mis Datos</header>
+  <p id="texto"> A continuacion encontraras tu informacion personal para ser modificada.</p>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <label>Nombre</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+        <td>
+          <label>Apellidos</label>
+        </td>
+        <td>
+          <input type="text" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Tipo de Documento</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="RC">Registro Civil</option>
+            <option value="TI">Tarjeta de Identidad</option>
+            <option value="CC">Cedula de Ciudadania</option>
+            <option value="CE">Cedula de Extranjeria</option>
+          </select>
+        </td>
+        <td>
+          <label>Documento</label>
+        </td>
+        <td>
+          <input type="number" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Genero</label>
+        </td>
+        <td>
+          <select>
+            <option>Seleccione</option>
+            <option value="Femenido">Femenino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </td>
+        <td>
+          <label>Fecha de Nacimiento</label>
+        </td>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Telefono contacto</label>
+        </td>
+        <td>
+          <input type="tel" required>
+        </td>
+        <td>
+          <label>Direccion de Recidencia</label>
+        </td>
+        <td>
+          <input type="text">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Correo Electronico</label>
+        </td>
+        <td>
+          <input type="email" required>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    <center><button><input type="submit" id="enviar" value="Actualizar"></button></center>
+  </form>
+</div>
+
+<div id="MatSal" style="display: none">
+  <header>Asignar Materias a un Curso</header>
+  <table>
+    <tr>
+      <td>
+        <label>Curso</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option>Cursos</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Materia</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option>Materias</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <center><button><input type="submit" value="Asignar"></button></center>
+</div>
+
+<div id="DocMat" style="display: none">
+  <header>Asignar Materia a un Docente</header>
+  <table>
+    <tr>
+      <td>
+        <label>Materia - Salon</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option>Materia-Salon</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Docente</label>
+      </td>
+      <td>
+        <select>
+          <option></option>
+          <option>Docentes</option>
+        </select>
+      </td>
+    </tr>
+  </table>
 </div>

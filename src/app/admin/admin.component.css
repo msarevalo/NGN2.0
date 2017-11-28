@@ -5,6 +5,10 @@ body{
 
 #menu{
   float: left;
+  min-height: 100vh;
+  /* height: 100%; */
+  position: fixed;
+  top: 0;
 }
 
 #menu ul {
@@ -15,7 +19,7 @@ body{
   font-family: Arial, sans-serif;
   font-size: 11pt;
   background: #404c81;
-  height: 100%;
+  height: 100vh;
 }
 
 #menu ul li {
@@ -594,6 +598,418 @@ input[type=date]{
 }
 
 #EliminarDocente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#CrearEstudiante{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#CrearEstudiante header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#CrearEstudiante select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#CrearEstudiante table td{
+  padding: 18px 25px;
+}
+
+#ActualizarEstudiante{
+  position: absolute;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#ActualizarEstudiante header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#ActualizarEstudiante table{
+  padding: 18px 25px;
+}
+
+#ActualizarEstudiante table td{
+  padding: 10px 25px;
+}
+
+#ActualizarEstudiante select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActEst{
+  position: absolute;
+  top: 31.5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#ActEst header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#ActEst select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActEst table td{
+  padding: 18px 25px;
+}
+
+#EliminarEstudiante{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#EliminarEstudiante header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#EliminarEstudiante table{
+  padding: 18px 25px;
+}
+
+#EliminarEstudiante table td{
+  padding: 10px 25px;
+}
+
+#EliminarEstudiante select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#CrearAcudiente{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#CrearAcudiente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#CrearAcudiente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#CrearAcudiente table td{
+  padding: 18px 25px;
+}
+
+#ActualizarAcudiente{
+  position: absolute;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#ActualizarAcudiente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#ActualizarAcudiente table{
+  padding: 18px 25px;
+}
+
+#ActualizarAcudiente table td{
+  padding: 10px 25px;
+}
+
+#ActualizarAcudiente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActAcu{
+  position: absolute;
+  top: 31.5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#ActAcu header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+input[type=date]{
+  width: 100%;
+}
+
+#ActAcu select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#ActAcu table td{
+  padding: 18px 25px;
+}
+
+#EliminarAcudiente{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 200px;
+}
+
+#EliminarAcudiente header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#EliminarAcudiente table{
+  padding: 18px 25px;
+}
+
+#EliminarAcudiente table td{
+  padding: 10px 25px;
+}
+
+#EliminarAcudiente select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#Actualizar{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  background-color: #dddddd;
+  border-radius: 25px;
+}
+
+#Actualizar p{
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+
+#Actualizar header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#Actualizar select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#Actualizar input[type=date]{
+  width: 100%;
+}
+
+#Actualizar table td{
+  padding: 18px 25px;
+}
+
+#MatSal{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 240px;
+}
+
+#MatSal header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#MatSal table{
+  padding: 18px 25px;
+}
+
+#MatSal table td{
+  padding: 10px 25px;
+}
+
+#MatSal select{
+  padding: 0px 0px 7px 0px;
+  text-align: center;
+  width: 180px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+#DocMat{
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  background-color: #dddddd;
+  border-radius: 25px;
+  width: 500px;
+  height: 240px;
+}
+
+#DocMat header{
+  background-color: #3a7999;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 25px 25px 0px 0px;
+}
+
+#DocMat table{
+  padding: 18px 25px;
+}
+
+#DocMat table td{
+  padding: 10px 25px;
+}
+
+#DocMat select{
   padding: 0px 0px 7px 0px;
   text-align: center;
   width: 180px;
